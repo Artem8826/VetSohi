@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты выездного ветеринара в Сочи — VetSochi</title>
+  <meta name="description" content="Контакты выездного ветеринара в Сочи: телефон, email, адрес и запись на выезд на дом по районам города.">
+  <meta name="keywords" content="контакты ветеринара Сочи, выезд ветеринара телефон, вызвать ветеринара на дом Сочи">
+  <link rel="canonical" href="https://vetsochi.ru/contacts">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="veterinary-portfolio.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <a class="logo" href="veterinary-portfolio.html">VetSochi</a>
+      <ul class="menu">
+        <li><a href="veterinary-portfolio.html">Главная</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="cases.html">Кейсы</a></li>
+        <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+      </ul>
+      <a class="btn btn-small" href="#" data-open-booking>Записаться</a>
+    </nav>
+    <div class="hero-content container">
+      <p class="eyebrow">Связь с нами</p>
+      <h1>Контакты выездного ветеринара в Сочи</h1>
+      <p class="lead">Запись на выезд ветеринара на дом, консультации и уточнение стоимости услуг.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Телефон</h3>
+          <p><a href="tel:+79180000000">+7 (918) 000-00-00</a></p>
+        </article>
+        <article class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:hello@vetsochi.ru">hello@vetsochi.ru</a></p>
+        </article>
+        <article class="card">
+          <h3>Адрес</h3>
+          <p>г. Сочи, ул. Навагинская, 12</p>
+        </article>
+        <article class="card">
+          <h3>Режим работы</h3>
+          <p>Ежедневно: 09:00 - 21:00</p>
+        </article>
+      </div>
+      <div class="section-head" style="margin-top: 28px;">
+        <h2>Районы выезда и формат работы</h2>
+      </div>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>География выезда</h3>
+          <p>Центральный район, Адлер, Хоста, Мамайка, Дагомыс и ближайшие локации Большого Сочи.</p>
+        </article>
+        <article class="card">
+          <h3>Когда обращаться</h3>
+          <p>Если нужен плановый визит, вакцинация, послеоперационный осмотр или срочная помощь питомцу на дому.</p>
+        </article>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <h2>VetSochi</h2>
+        <p>Мы рядом, когда вашему питомцу нужна помощь.</p>
+      </div>
+      <div class="contacts">
+        <a href="tel:+79180000000">+7 (918) 000-00-00</a>
+        <a href="mailto:hello@vetsochi.ru">hello@vetsochi.ru</a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="booking-modal" aria-hidden="true">
+    <div class="modal-overlay" data-close-booking></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+      <button class="modal-close" type="button" aria-label="Закрыть" data-close-booking>&times;</button>
+      <h3 id="booking-title">Запись на прием</h3>
+      <p>Оставьте заявку, и мы свяжемся с вами для подтверждения записи.</p>
+      <form class="contact-form" action="https://formsubmit.co/netgop@mail.ru" method="POST">
+        <input type="hidden" name="_subject" value="Новая заявка с сайта VetSochi">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden-field">
+        <label>Ваше имя<input type="text" name="name" required></label>
+        <label>Телефон<input type="tel" name="phone" required></label>
+        <label>Email<input type="email" name="email"></label>
+        <label>Питомец<input type="text" name="pet"></label>
+        <label>Сообщение<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
